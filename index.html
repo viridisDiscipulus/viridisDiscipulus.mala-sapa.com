@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <title>Mala Šapa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .service-logo {
+      width: 190px;
+      height: 165px;
+      border-radius: 10%;
+    }
+
+    .grey-background {
+      background-color: rgba(51, 45, 49, 0.5);
+      border-radius: 15px;
+      padding: 5px 10px;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .btn-carousel {
+      width: 25%;
+      text-align: center;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      color: white;
+      background-color: blue;
+    }
+
+    @media (max-width: 768px) {
+      .btn-carousel {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0.875em;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .btn-carousel {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0.875em;
+      }
+    }
+
+    .responsive-heading {
+      font-size: 3.4rem;
+      line-height: 1.2;
+    }
+
+    @media (min-width: 992px) {
+      .responsive-heading {
+        font-size: 3.2rem;
+        line-height: 1.2;
+        margin-bottom: 2rem !important;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .responsive-heading {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 2rem !important;
+      }
+    }
+
+    @media (min-width: 690px) and (max-width: 767.98px) {
+      .responsive-heading {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 5rem !important;
+      }
+    }
+
+    @media (max-width: 689px) {
+      .responsive-heading {
+        font-size: 2rem;
+
+        line-height: 1.2;
+        margin-bottom: 5rem !important;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="container-fluid">
+    <div class="row pt-4 pb-3 px-lg-5" style="background-color: #55404f">
+      <div class="col-lg-4">
+        <a href="index.html" class="navbar-brand d-none d-lg-block" style="text-decoration: none;">
+          <h1 class="m-0 display-5">
+            <img src="Slike/logo.png" alt="Logo" aria-label="Logo" class="logo">
+            <span class="moji-naslovi" style="color: #FE17BD;">Mala Šapa</span>
+          </h1>
+        </a>
+      </div>
+      <div class="col-lg-8 text-center text-lg-right" style="margin-top: 1.5rem;">
+        <div class="d-inline-flex align-items-center">
+          <div class="d-inline-flex flex-column text-center pr-3 border-right text-white">
+            <h6>Radno vrijeme</h6>
+            <p class="m-0">08.00 - 20.00h</p>
+          </div>
+          <div class="d-inline-flex flex-column text-center px-3 border-right text-white">
+            <h6>Email</h6>
+            <p class="m-0"><a href="mailto:mala-sapa@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                mala-sapa@gmail.com</a></p>
+          </div>
+          <div class="d-inline-flex flex-column text-center pl-3 text-white">
+            <h6>Nazovite nas</h6>
+            <p class="m-0"><a href="tel:044530XXX"><i class="fa fa-phone" aria-hidden="true"></i>
+                044/530-XXX</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar -->
+
+  <!-- Navbar-->
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0 px-lg-5" style="background-color: #332D31;">
+      <a href="index.html" class="navbar-brand d-block d-lg-none" style="text-decoration: none;">
+        <h1 class="m-0 display-5 text-white"><span class="moji-naslovi" style="color: #FE17BD;">Mala Šapa</span></h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+        <div class="navbar-nav mr-auto py-0">
+          <a href="index.html" class="nav-item nav-link active">Početna</a>
+          <a href="o-nama.html" class="nav-item nav-link">O nama</a>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Hrana</a>
+            <div class="dropdown-menu rounded-0 m-0" style="color: #332D31; background-color:#332D31">
+              <a href="hrana-za-pse.html" class="dropdown-item">Hrana za pse</a>
+              <a href="hrana-za-macke.html" class="dropdown-item">Hrana za mačke</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Proizvodi</a>
+            <div class="dropdown-menu rounded-0 m-0 " style="color: #332D31; background-color:#332D31">
+              <a href="oprema.html" class="dropdown-item">Oprema</a>
+              <a href="njega.html" class="dropdown-item">Njega</a>
+            </div>
+          </div>
+          <a href="salon.html" class="nav-item nav-link">Salon</a>
+          <a href="ljekarna.html" class="nav-item nav-link">Ljekarna</a>
+          <a href="galerija.html" class="nav-item nav-link">Galerija</a>
+          <a href="kontakt.html" class="nav-item nav-link">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar-->
+
+
+  <!-- Carousel -->
+  <div class="container-fluid p-0">
+    <div id="header-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="Slike/salon-carousel.jpeg" alt="Image">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px;">
+              <h3 class="text-white mb-3 d-none d-lg-block moji-naslovi grey-background">Vrhunska usluga za kućne
+                ljubimce</h3>
+              <h1 class="responsive-heading text-white mb-md-3 mb-0 moji-naslovi grey-background">Neka vaš ljubimac bude
+                sretan</h1>
+              <h5 class="text-white mb-3 d-none d-lg-block moji-naslovi grey-background">Iskusni tim pruža nježnu brigu
+                i pažljivo
+                uređivanje, prilagođeno potrebama vašeg ljubimca.</h5>
+              <div class="btns-carousel">
+                <a href="kontakt.html" class="btn btn-carousel mt-3 mt-md-4 px-4"
+                  style="background-color: #A9488D;">Rezervirajte sada
+                </a>
+                <a href="salon.html" class="btn btn-carousel mt-3 mt-md-4 px-4"
+                  style="background-color: #FE17BD;">Saznajte više</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <img class="w-100" src="Slike/proizvodi-carousel.jpeg" alt="Proizvodi" aria-label="Proizvodi">
+          </picture>
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px;">
+              <h3 class="text-white mb-3 d-none d-lg-block moji-naslovi grey-background">Premium proizvodi za vašeg
+                ljubimca</h3>
+              <h1 class="responsive-heading text-white mb-md-3 mb-0 moji-naslovi grey-background">Kvalitetna hrana i
+                dodaci za zdravlje
+              </h1>
+              <h5 class="text-white mb-3 d-none d-lg-block moji-naslovi grey-background">Igračke i oprema koje vaš
+                ljubimac obožava</h5>
+              <div class="btns-carousel">
+                <a href="hrana-za-pse.html" class="btn btn-carousel mt-3 mt-md-4 px-4"
+                  style="background-color: #A9488D;">Hrana</a>
+                <a href="oprema.html" class="btn btn-carousel mt-3 mt-md-4 px-4"
+                  style="background-color: #FE17BD;">Proizvodi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+        <div class="btn rounded d-flex justify-content-center align-items-center"
+          style="width: 45px; height: 45px; border: 2px solid #ffffff;">
+          <span class="carousel-control-prev-icon"></span>
+        </div>
+      </a>
+      <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+        <div class="btn rounded d-flex justify-content-center align-items-center"
+          style="width: 45px; height: 45px; border: 2px solid #ffffff;">
+          <span class="carousel-control-next-icon"></span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Carousel -->
+
+
+  <!-- Container info -->
+
+  <div class="container-fluid">
+    <div class="row align-items-center" style="background-color: #55404f">
+      <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center py-5">
+        <div class="custom-flex-class mt-3">
+          <h3 class="text-white mb-4 moji-naslovi">Dobrodošli u Vašu omiljenu trgovinu</h3>
+          <h5 class="text-white mb-3 moji-naslovi">O našoj ponudi za kućne ljubimce</h5>
+          <div class="col-9 align-self-start px-2 px-md-0 mt-4">
+            <p class="text-white moji-tekstovi">Naša mala obiteljska trgovina nudi pažljivo odabrane proizvode za vaše
+              ljubimce. S ljubavlju biramo samo najbolje za vaše prijatelje, od kvalitetne hrane do igračaka i dodataka.
+              Uvijek smo tu za vas, s osmijehom i savjetima kako bi vaši ljubimci bili sretni i zdravi. Srdačno vas
+              pozivamo da nas posjetite i doživite ugodnu atmosferu naše trgovine.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 order-2 order-md-1 d-flex justify-content-center py-5">
+        <img src="Slike/ulaz.jpeg" class="img-fluid" alt="Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Container info -->
+
+
+  <!-- Container services -->
+
+  <div class="container-fluid py-4" style="background-color: #A9488D">
+    <div class="row text-white">
+      <div class="col-12 text-center mb-4">
+        <h2 class="text-center w-100 my-3 moji-naslovi">Naše usluge</h2>
+        <p class="text-center moji-naslovi">U našoj trgovini pronaći ćete sve što vaš ljubimac treba, od hrane i opreme
+          do stručne njege u našem salonu i pouzdane veterinarske savjete u našoj ljekarni.</p>
+      </div>
+    </div>
+    <div class="row text-white justify-content-center pt-2">
+      <div class="col-md-3 d-flex flex-column align-items-center text-center">
+        <img src="Slike/proizvodi-icon.jpeg" alt="Trgovina" class="service-logo mb-3">
+        <h4 class="moji-naslovi">Trgovina</h4>
+        <p class="moji-tekstovi">Naša trgovina nudi širok izbor kvalitetne hrane i opreme za sve vrste kućnih ljubimaca,
+          osiguravajući da vaš ljubimac dobije najbolju njegu i pažnju.</p>
+      </div>
+      <div class="col-md-3 d-flex flex-column align-items-center text-center">
+        <img src="Slike/salon-icon.jpg" alt="Logo" class="service-logo mb-3">
+        <h4 class="moji-naslovi">Salon</h4>
+        <p class="moji-tekstovi">U našem salonu za uljepšavanje pružamo vrhunsku njegu i uljepšavanje, osiguravajući im
+          opuštajuće i ugodno iskustvo uz profesionalnu uslugu.</p>
+      </div>
+      <div class="col-md-3 d-flex flex-column align-items-center text-center">
+        <img src="Slike/ljekarna-icon.jpeg" alt="Logo" class="service-logo mb-3">
+        <h4 class="moji-naslovi">Ljekarna</h4>
+        <p class="moji-tekstovi">Naša veterinarska ljekarna nudi široku paletu proizvoda za zdravlje vaših ljubimaca,
+          uključujući
+          sredstva protiv nametnika, šampone, te lijekove za različite potrebe i stanja.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container services -->
+
+  <!-- Footer -->
+
+  <div class="container-fluid text-white py-2 px-sm-3 px-md-5" style="background-color: #55404f">
+    <div class="row justify-content-evenly pt-5">
+      <!-- Contact form -->
+      <div class="col-md-4 mb-5">
+        <h5 class="mb-4 moji-naslovi text-white">Kontaktirajte nas</h5>
+        <form action="">
+          <div class="form-group">
+            <input type="text" class="form-control border-0" placeholder="Vaše ime" required="required">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control border-0" placeholder="Vaša email adresa" required="required">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control border-0" style="resize: vertical;" placeholder="Vaš upit"
+              required="required"></textarea>
+          </div>
+          <div>
+            <button class="btn btn-lg btn-block border-0 text-white" style="background-color: #FE17BD;"
+              type="submit">Pošalji</button>
+          </div>
+        </form>
+      </div>
+      <!-- Contact form -->
+
+      <!-- Links -->
+      <div class="col-md-4 mb-5">
+        <h5 class="mb-4 moji-naslovi text-white">Poveznice</h5>
+        <div class="row mx-4">
+          <div class="col">
+            <a class="text-white d-block mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Početna</a>
+            <a class="text-white d-block mb-2" href="o-nama.html"><i class="fa fa-angle-right mr-2"></i>O nama</a>
+            <a class="text-white d-block mb-2" href="hrana-za-pse.html"><i class="fa fa-angle-right mr-2"></i>Hrana za
+              pse</a>
+            <a class="text-white d-block mb-2" href="hrana-za-macke.html"><i class="fa fa-angle-right mr-2"></i>Hrana za
+              mačke</a>
+            <a class="text-white d-block mb-2" href="oprema.html"><i class="fa fa-angle-right mr-2"></i>Oprema</a>
+          </div>
+          <div class="col">
+            <a class="text-white d-block mb-2" href="njega.html"><i class="fa fa-angle-right mr-2"></i>Njega</a>
+            <a class="text-white d-block mb-2" href="salon.html"><i class="fa fa-angle-right mr-2"></i>Salon</a>
+            <a class="text-white d-block mb-2" href="ljekarna.html"><i class="fa fa-angle-right mr-2"></i>Ljekarna</a>
+            <a class="text-white d-block mb-2" href="galerija.html"><i class="fa fa-angle-right mr-2"></i>Galerija</a>
+            <a class="text-white d-block mb-2" href="kontakt.html"><i class="fa fa-angle-right mr-2"></i>Kontakt</a>
+          </div>
+        </div>
+      </div>
+      <!-- Links -->
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-5">
+        <h5 class="mb-4 moji-naslovi text-white">Kontakti</h5>
+        <div class="row mx-4">
+          <div class="col">
+            <p>
+              <a href="index.html">
+                <img src="Slike/logo.png" alt="Logo" class="logo">
+              </a>
+            </p>
+            <p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Ulica+Matije+Gupca+5+Sisak+44000+Hrvatska"
+                target="_blank" style="color: #fff">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                Ulica Matije Gupca 5, Sisak 44000, Hrvatska
+              </a>
+            </p>
+            <p><a href="tel:044530XXX"><i class="fa fa-phone" aria-hidden="true"></i>
+                044/530-XXX</a></p>
+            <p><a href="mailto:mala-sapa@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                mala-sapa@gmail.com</a></p>
+            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0 pet-icon"
+              href="https://www.facebook.com/profile.php?id=100054263150115" target="_blank"
+              style="width: 40px; height: 40px; border: 2px solid #4267B2;">
+              <i class="fa fa-facebook-square" style="background-color: #4267B2;" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0 pet-icon"
+              href="https://www.instagram.com/malasapasisak/" target="_blank"
+              style="width: 40px; height: 40px; border: 2px solid #FFCF6C;">
+              <i class="fa fa-instagram" aria-hidden="true" style="background-color: #C0308C; "></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+
+  </div>
+
+  <!-- Footer -->
+
+  <!-- Copy rights -->
+
+  <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background-color: #332d31;">
+    <div class="row" style="color: #55404f">
+      <div class="col-md text-center mb-3 mb-md-0">
+        <p class="m-0 text-white">
+          © 2024 Mala Šapa. Sva prava zadržana.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copy rights -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
